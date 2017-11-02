@@ -5,6 +5,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.time.LocalDateTime;
 
+import lombok.Builder;
 import lombok.Getter;
 
 /**
@@ -12,13 +13,13 @@ import lombok.Getter;
  * sistema de DISC News.
  * @author Germán Rojo .
  */
-
+@Builder
 public final class Noticia {
     /**
      * Descripcion en una linea del titulo de la noticia
      */
     @Getter
-    private String titulo="ELLIOT ESTA VIVOOOOOOOOOOOO";
+    private String titulo;
     /**
      * Descripcion en 2 lineas y con un maximo de 140 caracteres
      */
